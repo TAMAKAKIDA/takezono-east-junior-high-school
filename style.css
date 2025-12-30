@@ -1,0 +1,44 @@
+.title{
+  color:white;
+  font-size:25px;
+  text-align:center;
+  background-color:green;
+}
+
+.photo img{
+  width:100%;
+  height:auto;
+}
+
+.space{
+  height:25px;
+  background-color: #efefef;
+}
+
+#takemaru{
+  width:1024px;
+  height:1024px;
+  background-image:url("images/normal.png")
+}
+
+#good-button:hover ~ #takemaru{
+  background-image: url('images/good.png');
+}
+
+#bad-button:hover ~ #takemaru{
+  background-image: url('images/bad.png');
+}
+
+#good-button,
+#bad-button,
+#to-form{
+  display: inline-block; 
+  padding: 10px 20px;
+  text-decoration: none; /* リンクの下線を消す */
+  cursor:pointer;
+  text-align: center;       /* テキストを中央寄せ */
+  background-color:green; /* 青色の背景 */
+  color:white;             /* 白色の文字 */
+  border:none;           /*枠線消す*/
+  border-radius:5px;       /* 角丸 */
+}
